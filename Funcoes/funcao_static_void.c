@@ -35,5 +35,8 @@ int main(void){
     /* imprime(); --- dará problema. */
     imprime2();
 
+    printf("---------------------------------------\n");
+    printf("Depois de fazer a alteração no Makefile\n");
+    printf("---------------------------------------\n\n");
     return 0;
 }
