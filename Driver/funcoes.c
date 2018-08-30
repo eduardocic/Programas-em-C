@@ -2,19 +2,20 @@
 #include "funcoes.h"
 
 int fatorial(int n){
-    int a = 1;
 
-    if ( n = 0 ){
-        printf("Fatorial é: %d\n", a);
-        return a;
+    if ( n == 0 ){
+        
+        printf("Fatorial é: %d\n", 1);
+        return 1;
     }
     else {
+        int fat = 1;
         for (int i = 1; i <= n ; i++){
-            a = a*i;
+            fat = fat*i;
         }
-        printf("Fatorial é: %d\n", a);
+        printf("Fatorial é: %d\n", fat);
+        return fat;
     }
-    return a;
 }
 
 int quadrado(int n){
