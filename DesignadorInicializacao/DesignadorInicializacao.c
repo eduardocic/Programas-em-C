@@ -17,7 +17,6 @@
  * 
  * Vamos aos exemplos.
  *****************************************************/
-
 typedef struct {
     char *nome;
     int idade;
@@ -95,6 +94,14 @@ printf("Nome:   %s\n", p.nome);
 printf("Idade:  %d\n", p.idade);
 printf("Altura: %.2f\n\n", p.altura);
 
+
+/*A outra abordagem eu fui mais direto */
+pessoa p2 = {"Eduardo", 20, 2.00};
+printf("\n\n=====================================\n");
+printf("Imprimindo os elementos da estrutura.\n");
+printf("Nome:   %s\n", p2.nome);
+printf("Idade:  %d\n", p2.idade);
+printf("Altura: %.2f\n\n", p2.altura);
 /* Maiores detalhes você pode pegar diretamente nos
    links já abordados acima. */
 }
