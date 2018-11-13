@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include "funcoes.h"
 
+/*******************************************************
+ * Funções do meu sistema as quais eu desejo executar
+ * no meu sistema. Nesta parte do programa eu pratica-
+ * mente não me preocupo com a parte do driver em sim.
+ * De maneira que a abtração fica por parte apenas do 
+ * driver.
+ ******************************************************/
+
 int fatorial(int n){
 
     if ( n == 0 ){

@@ -3,6 +3,7 @@
 
 int main(){
 
+    /* Teste para fatorial */
     for( int i = 0 ; i < 10 ; i++ ){
         printf("O fatorial de %d é %d\n", i, fatorial(i));
     }
