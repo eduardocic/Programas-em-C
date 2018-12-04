@@ -53,16 +53,23 @@ int main(void){
     do{
 	/* pega caracter a caracter */
         flag = fgetc(p_read);
+
+	/* Se tiver espaço no original ou mesmo algum tipo de 		   vírgula, eu simplesmente não leio */
         if (flag == ' '){
         }
+	
+	/* Faço a conversão do valor 'char' lido para 'hexa' e
+           vou preenchendo o buffer */
         else {
             buffer[i] = CharToHex(flag);
             i++;
         }  
+ 
+        /* Se chegar no limite da linha estipulada, a ideia é
+           é realizar o ajuste dos parâmetros das 'nibbles' */
         if ( i == 12){
-            inteiro.d_c[0]   = (buffer[0] << 4) | buffer[1];
-            inteiro.d_c[1]   = (buffer[2] << 4) | buffer[3];
-    
+            inteiro.d_c[0]   = (buffer[ 0] << 4) | buffer[ 1];
+            inteiro.d_c[1]   = (buffer[ 2] << 4) | buffer[ 3];
             flutuante.d_c[0] = (buffer[ 4] << 4) | buffer[ 5];
             flutuante.d_c[1] = (buffer[ 6] << 4) | buffer[ 7];
             flutuante.d_c[2] = (buffer[ 8] << 4) | buffer[ 9];
