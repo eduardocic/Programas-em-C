@@ -16,7 +16,7 @@ void printBinario(int a){
     int k;
 
     printf("0 b ");
-    for (int i = 15; i >= 0; i--){
+    for (int i = (sizeof(int)*8 - 1); i >= 0; i--){
         k = a >> i;
         if (k & 1){
             printf("1");
@@ -35,7 +35,7 @@ void printBinario(int a){
 int maiorUnitario(int a){
     int flag = 0;
 
-    for (int i = 15; i >= 0; i--){
+    for (int i = (sizeof(int)*8 - 1); i >= 0; i--){
         flag = a >> i;
         if (flag & 1){
             return i;
@@ -123,8 +123,8 @@ int main(void){
         printf("Resto ar.: ");
         printBinario(resto);  printf("\n");
         printf("Quosc.   : ");
-        printBinario(quosciente);  printf("\n");
-        printf("----------------------------------\n\n");
+        printBinario(quosciente);  printf("\n\n");
+        printf("------------------------------------------------------\n");
     }
 
     printf("\nResultado Final\n");
